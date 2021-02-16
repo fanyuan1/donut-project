@@ -242,6 +242,7 @@
       var x33 = -sA * sC * cA * cC;
 
       for (var y = -1; y < 1.3; y += 0.025) {
+        var new_guess = 0.5;
         for (var x = 0.0; x < 1.2; x += 0.025) {
           var coeff6 = 729 / 64;
           var coeff4 = (243 / 16) * (x ** 2 + y ** 2 - 1);
@@ -265,7 +266,6 @@
             3 * y ** 4 +
             3 * y ** 2 -
             1;
-          var new_guess = 0.75;
 
           for (var c = 0; c < 50; c += 1) {
             z = new_guess;
